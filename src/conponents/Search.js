@@ -1,6 +1,6 @@
 import { React, useState} from 'react';
 
-function Search () => {
+function Search() {
     return (
         <>
         <input type={text}></input>
