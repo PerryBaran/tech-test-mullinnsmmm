@@ -5,13 +5,14 @@ import getImages from "../requests/getImages";
 const Search = () => {
     const [value, setValue] = useState();
 
-    handleSubmit(onSubmit)(event.preventDefault())
-
-    getImages(value);
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        getImages(value);
+    };
     
     return (
         <>
-    <form className="search-form" onSubmit={handleSubmit(event)}>
+    <form className="search-form" onSubmit={handleSubmit}>
             <input 
             className="search-input" 
             type="text" 
