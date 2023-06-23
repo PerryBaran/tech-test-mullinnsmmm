@@ -1,9 +1,12 @@
-import { React, useState} from 'react';
+import React, { useState } from 'react';
+import "../styles/search.css";
 
-function Search() {
+const Search = () => {
     return (
         <>
-        <input type={text}></input>
+        <input className="search-input" type="text" />
         </>
-    )
-}
+    );
+};
+
+export default Search;
