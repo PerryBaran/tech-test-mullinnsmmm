@@ -9,6 +9,10 @@ function getImages (query) {
         .then((response) => {
             const imageResults = response.data.collection.items; 
                 
+            const parsedImages = imageResults.filter(items.data[0], media_type==="images")
+            const images = items.data.map(images => images.links[0].href)
+
+            return images
 
             })
         .catch((err) => {
