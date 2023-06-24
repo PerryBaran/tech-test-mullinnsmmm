@@ -16,7 +16,7 @@ const Search = ({ setSearchResults }) => {
             <input 
             className="search-input" 
             type="text" 
-            onChange={(e) => setValue(e.target.value)}
+            onChange={(event) => setValue(event.target.value)}
         />
         <button className="search-btn" type="submit">
             Go!
