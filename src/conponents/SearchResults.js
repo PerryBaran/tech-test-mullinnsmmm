@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/searchresults.css";
 
 const SearchResults = ({ results }) => {
+    console.log(results);
     if(!results) {
         return <p></p>
     } else if (!results.length) {

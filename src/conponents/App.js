@@ -7,6 +7,7 @@ import SearchResults from './SearchResults';
 const App = () => {
   const [searchResults, setSearchResults] = useState([]);
 
+  console.log(searchResults);
 
   return (
   <div className="app">
