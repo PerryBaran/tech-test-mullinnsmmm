@@ -26,3 +26,22 @@ exports[`Search Results returns image renders image 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`SearchResults renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="search-results"
+  >
+    <img
+      alt="spaceImage"
+      class="card-image"
+      src="https://unsplash.com/photos/uIf6H1or1nE"
+    />
+    <img
+      alt="spaceImage"
+      class="card-image"
+      src="https://unsplash.com/photos/wCujVcf0JDw"
+    />
+  </div>
+</DocumentFragment>
+`;

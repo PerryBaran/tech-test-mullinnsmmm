@@ -15,8 +15,8 @@ function getImages (query) {
             return images
 
             })
-        .catch((err) => {
-            console.log(err);
+        .catch((error) => {
+            console.log(error);
         });
     }
 };

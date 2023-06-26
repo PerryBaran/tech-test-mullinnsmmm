@@ -1,11 +1,30 @@
-import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import SearchResults from "../conponents/SearchResults";
 
-describe("Search Results", () => {
-    it("renders correctly", () => {
-        const results = [];
-        const { asFragment } = render(<SearchResults results={results}/>);
-        expect(asFragment()).toMatchSnapshot();
-    })
+describe("SearchResults", () => {
+  const validProps = {
+    searchResults: ["https://unsplash.com/photos/uIf6H1or1nE", "https://unsplash.com/photos/wCujVcf0JDw"]
+  };
+
+  it("renders correctly", () => {
+    const { asFragment } = render(
+      <SearchResults
+        results={validProps.searchResults} 
+      />
+    );
+    
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders the correct number of images", () => {
+    render(
+      <SearchResults
+        results={validProps.searchResults} 
+      />
+    );
+
+    expect(screen.getAllByTestId("search-results")).toHaveLength(2);
+  });
+
+
 });
