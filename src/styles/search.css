@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    height: 50px;
+    border-radius: 11px;
+    font-size: 20px;
+    padding: 0 10px;
+    outline: auto;
+  }
+  
+  .search-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50%; 
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 30px;
+    outline:auto;
+  }
+
+
+  
+

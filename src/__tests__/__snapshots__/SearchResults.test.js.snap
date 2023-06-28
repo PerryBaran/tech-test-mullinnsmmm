@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Results renders correctly 1`] = `
+<DocumentFragment>
+  <p
+    class="results-message"
+  >
+    No results
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Search Results returns image renders image 1`] = `
+<DocumentFragment>
+  <div
+    class="searchResults"
+  >
+    <img
+      alt="searchResults"
+      class="search-images"
+      src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+    />
+    <p>
+      Search Result
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SearchResults renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="search-results"
+  >
+    <img
+      alt="spaceImage"
+      class="card-image"
+      src="https://unsplash.com/photos/uIf6H1or1nE"
+    />
+    <img
+      alt="spaceImage"
+      class="card-image"
+      src="https://unsplash.com/photos/wCujVcf0JDw"
+    />
+  </div>
+</DocumentFragment>
+`;
